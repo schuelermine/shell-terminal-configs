@@ -4,9 +4,10 @@ This is a repository for shell or terminal config files, be they configs, functi
 
 # faQ (possibly-**f**allaciously **a**nticipated **Q**uestions)
 
-### Why does `colorful-informative_prompt/powershell-7` specify the version?
+### Does `colorful-informative_prompt/powershell-7` work with Windows PowerShell?
 
-It uses the ternary operator (`condition ? value1 : value2`).
+No, because it uses the ternary operator (`condition ? value1 : value2`).
+You need PowerShell 7 or later.
 
 ---
 
