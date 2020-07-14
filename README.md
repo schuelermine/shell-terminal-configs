@@ -1,6 +1,6 @@
-# Welcome to `schuelermine/terminal-configs`!
+# Welcome to `schuelermine/shell-terminal-configs`!
 
-This is a repository for terminal config files, be they functions, startup scripts, modules, prompts, syntax highlighting, color schemes or autosuggestions - anything small.
+This is a repository for shell or terminal config files, be they configs, functions, startup scripts, modules, prompts, syntax highlighting, color schemes, keymaps or autosuggestions - anything small(ish).
 
 # faQ (possibly-**f**allaciously **a**nticipated **Q**uestions)
 
