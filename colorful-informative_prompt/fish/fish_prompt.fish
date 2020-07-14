@@ -6,6 +6,7 @@ function fish_prompt --description 'Write out the prompt'
     set redcolor (set_color brred)
     set whitecolor (set_color brwhite)
     set greencolor (set_color brgreen)
+    set graycolor (set_color brblack)
 
     set warningcolor $greencolor
     if test $oldstatus -gt 0
@@ -14,11 +15,11 @@ function fish_prompt --description 'Write out the prompt'
 
     switch "$USER"
         case root toor
-            echo ┌[(date +%H:%M:%S)] "$redcolor""$USER"@(prompt_hostname) "$greencolor""$PWD" "$warningcolor"["$oldstatus"]"$normalcolor"
+            echo ┌[(date +%H:%M:%S)] "$redcolor""$USER"@(prompt_hostname) "$greencolor""$PWD" "$warningcolor"["$oldstatus"]"$graycolor" [fish]"$normalcolor"
             echo ╘■" "
 
         case '*'
-            echo ┌[(date +%H:%M:%S)] "$bluecolor""$USER"@(prompt_hostname) "$greencolor""$PWD" "$warningcolor"["$oldstatus"]"$normalcolor"
+            echo ┌[(date +%H:%M:%S)] "$bluecolor""$USER"@(prompt_hostname) "$greencolor""$PWD" "$warningcolor"["$oldstatus"]"$graycolor" [fish]"$normalcolor"
             echo └▶" "
     end
 end
