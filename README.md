@@ -2,6 +2,16 @@
 
 This is a repository for shell or terminal config files, be they configs, functions, startup scripts, modules, prompts, syntax highlighting, color schemes, keymaps or autosuggestions - anything small(ish).
 
+# Installation
+
+### fish functions
+
+Type the function in your prompt and then write `funcsave` and then the name of the function.
+
+### PowerShell functions
+
+Add the function to your profile file, the location of which you can find out by checking the `$PROFILE` automatic variable.
+
 # faQ (possibly-**f**allaciously **a**nticipated **Q**uestions)
 
 ### Does `colorful-informative_prompt/powershell-7` work with Windows PowerShell?
