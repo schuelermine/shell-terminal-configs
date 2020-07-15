@@ -9,3 +9,6 @@ $AdminPromptComponent = $Admin ? "|A" : ""
 
 Set-Variable -Name IsAdmin -Option ReadOnly
 Set-Variable -Name AdminPromptComponent -Option ReadOnly
+
+$PromptSuffix = "▶ "
+Set-PSReadLineOption -PromptText $PromptSuffix

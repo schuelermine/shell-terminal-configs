@@ -10,7 +10,6 @@ function prompt {
     $Code ??= 0
     $Path = Get-Location
     $Time = Get-Date -Format "HH:mm:ss"
-    $Suffix = (Get-PSReadLineOption).PromptText[0]
     
     Write-Host "┌[$Time] " -NoNewline
     Write-Host "$Env:USERNAME " -ForegroundColor Blue -NoNewline
@@ -20,5 +19,5 @@ function prompt {
     Write-Host "$Code] " -ForegroundColor $CodeColor -NoNewline
     Write-Host "[pwsh]" -ForegroundColor DarkGray
 
-    Write-Output "└$Suffix"
+    Write-Output "└$PromptSuffix"
 }
