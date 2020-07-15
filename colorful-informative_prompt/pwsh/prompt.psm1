@@ -19,5 +19,5 @@ function prompt {
     Write-Host "$Code] " -ForegroundColor $CodeColor -NoNewline
     Write-Host "[pwsh]" -ForegroundColor DarkGray
 
-    Write-Output ($PromptStem + $PromptSuffix)
+    Write-Output ($PromptStem + $PromptEnd)
 }
