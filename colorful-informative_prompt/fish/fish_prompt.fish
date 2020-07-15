@@ -15,11 +15,11 @@ function fish_prompt --description 'Write out the prompt'
 
     switch "$USER"
         case root toor
-            echo ┌[(date +%H:%M:%S)] "$redcolor""$USER"@(prompt_hostname) "$greencolor""$PWD" "$warningcolor"["$oldstatus"]"$graycolor" [fish]"$normalcolor"
+            echo ┌[(date +%H:%M:%S)] "$redcolor""$USER" "$greencolor""$PWD" "$warningcolor"["$oldstatus"]"$graycolor" [fish]"$normalcolor"
             echo ╘■" "
 
         case '*'
-            echo ┌[(date +%H:%M:%S)] "$bluecolor""$USER"@(prompt_hostname) "$greencolor""$PWD" "$warningcolor"["$oldstatus"]"$graycolor" [fish]"$normalcolor"
+            echo ┌[(date +%H:%M:%S)] "$bluecolor""$USER" "$greencolor""$PWD" "$warningcolor"["$oldstatus"]"$graycolor" [fish]"$normalcolor"
             echo └▶" "
     end
 end
