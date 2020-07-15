@@ -11,14 +11,16 @@ function prompt {
     $Path = Get-Location
     $Time = Get-Date -Format "HH:mm:ss"
     $Suffix = (Get-PSReadLineOption).PromptText[0]
-    
+    $Admin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+    $AdminString = $Admin ? "|A" : ""
+
     Write-Host "┌[$Time] " -NoNewline
     Write-Host "$Env:USERNAME " -ForegroundColor Blue -NoNewline
     Write-Host "$Path " -ForegroundColor Green -NoNewline
     Write-Host "[$SuccessString" -ForegroundColor $SuccessColor -NoNewline
     Write-Host "|" -ForegroundColor $MiddleColor -NoNewline
     Write-Host "$Code] " -ForegroundColor $CodeColor -NoNewline
-    Write-Host "[pwsh]" -ForegroundColor DarkGray
+    Write-Host "[pwsh$AdminString]" -ForegroundColor DarkGray
 
     Write-Output "└$Suffix"
 }
