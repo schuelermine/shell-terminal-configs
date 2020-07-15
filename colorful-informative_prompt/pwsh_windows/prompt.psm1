@@ -19,5 +19,5 @@ function prompt {
     Write-Host "$Code] " -ForegroundColor $CodeColor -NoNewline
     Write-Host "[pwsh$AdminPromptComponent]" -ForegroundColor DarkGray
 
-    Write-Output "└$PromptSuffix"
+    Write-Output ($PromptStem + $PromptSuffix)
 }

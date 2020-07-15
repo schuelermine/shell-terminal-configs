@@ -1,2 +1,4 @@
-$PromptSuffix = "▶ "
-Set-PSReadLineOption -PromptText $PromptSuffix
+$PromptStem, $PromptEnd = "└", "▶ "
+$ContPromptEnd = "⊣ "
+Set-PSReadLineOption -PromptText $PromptEnd
+Set-PSReadLineOption -ContinuationPrompt $ContPromptEnd
