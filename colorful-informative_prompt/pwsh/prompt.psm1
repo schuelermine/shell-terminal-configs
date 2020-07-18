@@ -15,7 +15,7 @@ function prompt {
     Write-Host "$Env:USERNAME " -ForegroundColor Blue -NoNewline
     Write-Host "$Path " -ForegroundColor Green -NoNewline
     Write-Host "[$SuccessString" -ForegroundColor $SuccessColor -NoNewline
-    Write-Host "|" -ForegroundColor $MiddleColor -NoNewline
+    Write-Host "/" -ForegroundColor $MiddleColor -NoNewline
     Write-Host "$Code] " -ForegroundColor $CodeColor -NoNewline
     Write-Host "[pwsh]" -ForegroundColor DarkGray
 
