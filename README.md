@@ -2,6 +2,8 @@
 
 This is a repository for shell or terminal config files, be they configs, functions, startup scripts, modules, prompts, syntax highlighting, color schemes, keymaps or autosuggestions - anything small(ish).
 
+## Warning! This is currently in developement. If the code doesn't work for you right now, try browsing the repo's history. Sometimes, things are changed which some users might not want.
+
 # Installation
 
 ### fish functions
