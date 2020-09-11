@@ -12,12 +12,12 @@ function prompt {
     $Time = Get-Date -Format "HH:mm:ss"
     
     Write-Host "┌[$Time] " -NoNewline
+    Write-Host "[\>_] " -ForegroundColor DarkGray -NoNewline
     Write-Host "$Env:USERNAME " -ForegroundColor Blue -NoNewline
     Write-Host "$Path " -ForegroundColor Green -NoNewline
     Write-Host "[$SuccessString" -ForegroundColor $SuccessColor -NoNewline
     Write-Host "/" -ForegroundColor $MiddleColor -NoNewline
-    Write-Host "$Code] " -ForegroundColor $CodeColor -NoNewline
-    Write-Host "[pwsh]" -ForegroundColor DarkGray
+    Write-Host "$Code] " -ForegroundColor $CodeColor
 
     Write-Output ($PromptStem + $PromptEnd)
 }
