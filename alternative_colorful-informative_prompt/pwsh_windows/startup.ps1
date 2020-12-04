@@ -10,7 +10,7 @@ $AdminPromptComponent = $Admin ? "*" : "_"
 Set-Variable -Name IsAdmin -Option ReadOnly
 Set-Variable -Name AdminPromptComponent -Option ReadOnly
 
-$PromptStem, $PromptEnd = $IsAdmin ? "╘", "■ " : "└", "▶ "
+$PromptStem, $PromptEnd = $IsAdmin ? "╘", "$ " : "└", "# "
 $ContPromptEnd = "|  "
 Set-PSReadLineOption -PromptText $PromptEnd
 Set-PSReadLineOption -ContinuationPrompt $ContPromptEnd
